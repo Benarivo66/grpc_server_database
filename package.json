@@ -1,0 +1,22 @@
+{
+  "name": "grpc_server_database",
+  "version": "1.0.0",
+  "description": "database service for grpc server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthony-deca/grpc_server_database.git"
+  },
+  "author": "Anthony Izekor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anthony-deca/grpc_server_database/issues"
+  },
+  "homepage": "https://github.com/anthony-deca/grpc_server_database#readme",
+  "dependencies": {
+    "mongoose": "^5.5.7"
+  }
+}
