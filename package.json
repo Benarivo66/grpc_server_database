@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/anthony-deca/grpc_server_database#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "mongoose": "^5.5.7"
   }
 }

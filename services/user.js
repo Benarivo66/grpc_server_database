@@ -1,4 +1,4 @@
-import User from '../models/user';
+const User = require('../models/user');
 
 async function getByEmail(email) {
     const user = await User.findOne({email, deleted:false});
@@ -12,10 +12,15 @@ async function getAll() {
     const users = await User.find({deleted: false });
     return users;
 }
+async function getOne(_id) {
+    const user = await User.findById({ _id, deleted: false });
+    return user;
+}
 
 
 module.exports = {
     getByEmail,
     create,
-    getAll
+    getAll,
+    getOne
 }
