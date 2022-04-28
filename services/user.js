@@ -16,11 +16,24 @@ async function getOne(_id) {
     const user = await User.findById({ _id, deleted: false });
     return user;
 }
+async function update(_id, {...data}){
+    const user = await User.findByIdAndUpdate(
+        _id,
+        {
+            $set: {
+                ...data
+            }
+        },
+        {new: true}
+    );
+    return user;
+}
 
 
 module.exports = {
     getByEmail,
     create,
     getAll,
-    getOne
+    getOne,
+    update
 }
