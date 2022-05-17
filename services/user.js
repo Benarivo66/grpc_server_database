@@ -13,7 +13,7 @@ async function getAll() {
     return users;
 }
 async function getOne(_id) {
-    const user = await User.findById({ _id, deleted: false });
+    const user = await User.findOne({_id, deleted: false });
     return user;
 }
 async function update(_id, {...data}){
